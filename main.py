@@ -99,7 +99,7 @@ def main():
             break
         print()
         difficulty = 0
-        print('Choose your difficulty:\n1.Easy\n2.Normal\n3. Hard')
+        print('Choose your difficulty:\n1. Easy\n2. Normal\n3. Hard')
         while difficulty not in (1, 2, 3):
             try:
                 difficulty = int(input())
