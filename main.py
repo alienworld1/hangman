@@ -114,7 +114,6 @@ def main():
         while True:
             try:
                 print()
-                print('Attempts remaining:', hangman.attempts)
                 res = hangman.result()
                 if res == 1:
                     print('You won!')
@@ -124,6 +123,7 @@ def main():
                     print('You lost!')
                     print('The word was', hangman.word)
                     break
+                print('Attempts remaining:', hangman.attempts)
                 print(hangman.return_word())
                 a = input('Enter your guess: ')
                 hangman.guess_letter(a)
